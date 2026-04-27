@@ -132,4 +132,3 @@ The parts of this project I am most confident about are the ones where something
 went wrong and I had to debug it — because those required me to genuinely
 understand what the code was doing, not just copy it.
 
-**Repository:** https://github.com/nbeedilli99/CS-665-Project-3
