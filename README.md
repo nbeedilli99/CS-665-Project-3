@@ -4,7 +4,7 @@
 ## Project Description
 A full-stack web application for managing a local food and bakery delivery service.
 Built with Python/Flask, SQLite, and Bootstrap. Users can manage customers, vendors,
-and orders through a clean web interface with a live summary dashboard.
+and orders through a clean web  interface with a live summary dashboard.
 
 ## Tech Stack
 - Python 3.13 + Flask
