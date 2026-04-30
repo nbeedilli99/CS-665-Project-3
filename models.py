@@ -19,7 +19,7 @@ class Vendor(db.Model):
     VendorName = db.Column(db.String(100), nullable=False)
     CuisineType = db.Column(db.String(50), nullable=False)
     AddedBy_Meta = db.Column(db.String(50), default='Admin_01')
-    orders = db.relationship('Order', backref='vendor', lazy=True)
+    orders = db.relationship('Order', backref='vendor', lazy=True )
 
 class Order(db.Model):
     __tablename__ = 'orders'
@@ -30,4 +30,4 @@ class Order(db.Model):
     DeliveryDate = db.Column(db.Date, nullable=True)
     SubTotal = db.Column(db.Float, nullable=False)
     TotalWithTax = db.Column(db.Float)
-    LastModified_Meta = db.Column(db.String(50), default='System_Auto')
+    LastModified_Meta = db.Column(db.String(60), default='System_Auto')
