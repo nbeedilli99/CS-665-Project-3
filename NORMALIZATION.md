@@ -10,7 +10,7 @@
 - Email → UserID (Email is unique)
 
 ### Vendors Table
-- VendorID → VendorName, CuisineType, AddedBy_Meta
+- VendorID → VendorName, CuisineType,  AddedBy_Meta
 
 ### Orders Table
 - OrderID → UserID, VendorID, OrderDate, DeliveryDate, SubTotal, TotalWithTax, LastModified_Meta
