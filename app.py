@@ -87,10 +87,10 @@ def add_vendor():
     db.session.commit()
     flash('Vendor added!', 'success')
     return redirect(url_for('vendors'))
-
+ 
 @app.route('/vendors/delete/<int:id>')
 def delete_vendor(id):
-    v = Vendor.query.get_or_404(id)
+    v = Vendor.query.get_or_404 (id)
     db.session.delete(v)
     db.session.commit()
     flash('Vendor deleted.', 'warning')
@@ -134,6 +134,7 @@ def add_order():
     return redirect(url_for('orders'))
 
 @app.route('/orders/delete/<int:id>')
+
 def delete_order(id):
     o = Order.query.get_or_404(id)
     db.session.delete(o)
@@ -142,4 +143,4 @@ def delete_order(id):
     return redirect(url_for('orders'))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug= True)
